@@ -1,0 +1,32 @@
+public class PrimeNumber {
+    public static void primecount()
+    {
+        int arr[] = {2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        int len = arr.length;
+        int count=0;
+        int i;
+        for (i=0; i<len; i++)
+        {
+            if ( (arr[i]==0) || (arr[i]==1))
+            {
+                // System.out.println("Not a Prime Number");
+            }
+
+            if ( (arr[i] % 2) == 0 )
+            {
+                // System.out.println("Not a Prime Number");
+            }
+
+            else 
+            {
+                count = count+1;
+            }
+        }
+        System.out.println("Number of Prime Numbers are: "+count);
+
+    }
+    public static void main(String[] args) {
+        primecount();
+    }
+}
