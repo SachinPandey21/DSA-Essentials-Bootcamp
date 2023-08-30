@@ -1,0 +1,23 @@
+public class ArrayAssignment {
+    public static void PrintArray() {
+        int arr[] = { 7, 9, 5, 6, 3, 2};
+        int len = arr.length;
+
+        int diff = arr[1] - arr[0];
+        int l, j;
+
+        for (l = 0; l < len; l++) {
+            for (j = l + 1; j < len; j++) {
+                if ((arr[j] - arr[l]) >= diff) {
+                    diff = arr[j] - arr[l];
+                    System.out.println(diff);
+                }
+            }
+        }
+
+    }
+
+    public static void main(String[] args) {
+        PrintArray();
+    }
+}
